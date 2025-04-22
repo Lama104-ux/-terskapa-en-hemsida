@@ -6,3 +6,21 @@ body {
     min-height: 100vh;
     /* Gör att hela sidan täcker minst 100% av skärmens höjd */
 }
+
+header {
+    padding-left: 1cm;
+    text-align: left;
+}
+
+/* Lägg till mellanrum mellan ikonerna */
+img {
+    margin-right: 0.5cm;
+    vertical-align: middle;
+    /* För bättre vertikal justering med Material-ikonen */
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 30px;
+    /* Matchande storlek med Spotify-ikonen */
+}
