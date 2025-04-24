@@ -2,85 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="sidebar.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="footer.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <title>Spotify Klon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Spotify Klon</title>
 </head>
 
 <body>
-    <header>
-        <div class="left-section">
-            <img src="SpotifyBild.png" alt="Company logo" width="30" height="30">
-            <span class="material-symbols-outlined">home</span>
+  <header>
+    <div class="left-section">
+      <img src="SpotifyBild.png" alt="Company logo" width="30" height="30">
+      <span class="material-symbols-outlined">home</span>
+    </div>
+
+    <div class="search-bar">
+      <span class="material-symbols-outlined">search</span>
+      <input type="text" placeholder="Vad vill du spela upp?" class="search-input">
+      <div class="search-divider"></div>
+      <span class="material-symbols-outlined explore-icon">magnify_docked</span>
+    </div>
+    <div class="right-section">
+      <nav class="header-nav">
+        <a href="#" class="nav-link">Premium</a>
+        <a href="#" class="nav-link">Support</a>
+        <a href="#" class="nav-link">Ladda ned</a>
+      </nav>
+      <div class="nav-divider"></div>
+      <div class="user-actions">
+        <a href="#" class="app-link">
+          <span class="material-symbols-outlined">download</span>
+          Installera app
+        </a>
+        <a href="#" class="register-link">Registrera dig</a>
+        <a href="#" class="login-button">Logga in</a>
+      </div>
+    </div>
+  </header>
+  <aside class="sidebar">
+    <div class="library-header">
+      <h2>Ditt bibliotek</h2>
+      <span class="material-symbols-outlined add-icon">add</span>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>Skapa din första spellista</h3>
+      <p>Det är enkelt, och vi hjälper dig</p>
+      <button class="spotify-button">Skapa spellista</button>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>Nu hittar vi några poddar att följa</h3>
+      <p>Vi håller dig uppdaterad om nya avsnitt</p>
+      <button class="spotify-button">Utforska poddar</button>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="footer-links">
+        <a href="#">Juridisk information</a>
+        <a href="#">Säkerhets- och integritetscenter</a>
+        <a href="#">Integritetspolicy</a>
+        <a href="#">Cookie-inställningar</a>
+        <a href="#">Om annonser</a>
+        <a href="#">Hjälpmedel</a>
+        <a href="#">Cookies</a>
+      </div>
+
+      <button class="language-button">
+        <span class="material-symbols-outlined">language</span>
+        Svenska
+      </button>
+    </div>
+  </aside>
+  <main>
+
+    <body>
+      <section class="section-body">
+        <div class="section-title">
+          <h2><a href="#">Populära låtar</a></h2>
         </div>
-
-        <div class="search-bar">
-            <span class="material-symbols-outlined">search</span>
-            <input type="text" placeholder="Vad vill du spela upp?" class="search-input">
-            <div class="search-divider"></div>
-            <span class="material-symbols-outlined explore-icon">magnify_docked</span>
+        <div class="see-all-link">
+          <a href="#">Visa alla</a>
         </div>
-        <div class="right-section">
-            <nav class="header-nav">
-                <a href="#" class="nav-link">Premium</a>
-                <a href="#" class="nav-link">Support</a>
-                <a href="#" class="nav-link">Ladda ned</a>
-            </nav>
-            <div class="nav-divider"></div>
-            <div class="user-actions">
-                <a href="#" class="app-link">
-                    <span class="material-symbols-outlined">download</span>
-                    Installera app
-                </a>
-                <a href="#" class="register-link">Registrera dig</a>
-                <a href="#" class="login-button">Logga in</a>
-            </div>
+      </section>
+
+      <section class="section-body">
+        <div class="section-title">
+          <h2><a href="#">Toppartister</a></h2>
         </div>
-    </header>
-    <aside class="sidebar">
-        <div class="library-header">
-            <h2>Ditt bibliotek</h2>
-            <span class="material-symbols-outlined add-icon">add</span>
+      </section>
+
+      <section class="section-body">
+        <div class="section-title">
+          <h2><a href="#">Populära album och singlar</a></h2>
         </div>
+      </section>
 
-        <div class="sidebar-card">
-            <h3>Skapa din första spellista</h3>
-            <p>Det är enkelt, och vi hjälper dig</p>
-            <button class="spotify-button">Skapa spellista</button>
+      <section class="section-body">
+        <div class="section-title">
+          <h2><a href="#">Populära radiostationer</a></h2>
         </div>
+      </section>
 
-        <div class="sidebar-card">
-            <h3>Nu hittar vi några poddar att följa</h3>
-            <p>Vi håller dig uppdaterad om nya avsnitt</p>
-            <button class="spotify-button">Utforska poddar</button>
+      <section class="section-body">
+        <div class="section-title">
+          <h2><a href="#">Rekommenderade topplistor</a></h2>
         </div>
+      </section>
 
-        <div class="sidebar-footer">
-            <div class="footer-links">
-                <a href="#">Juridisk information</a>
-                <a href="#">Säkerhets- och integritetscenter</a>
-                <a href="#">Integritetspolicy</a>
-                <a href="#">Cookie-inställningar</a>
-                <a href="#">Om annonser</a>
-                <a href="#">Hjälpmedel</a>
-                <a href="#">Cookies</a>
-            </div>
-
-            <button class="language-button">
-                <span class="material-symbols-outlined">language</span>
-                Svenska
-            </button>
+      <section class="section-body">
+        <div class="section-title">
+          <h2><a href="#">Musiken att ha koll på</a></h2>
         </div>
-    </aside>
+      </section>
 
 
-    <main>
 
-    </main>
+    </body>
+
+  </main>
 
 </body>
 
