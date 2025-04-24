@@ -1,0 +1,93 @@
+/* Mellanrum mellan titel och Visa alla */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Hur all text visas om inget annat anges*/
+.section-body {
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Styling för Title */
+.section-title h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;   
+}
+
+/* "Visa alla" till höger om titel */
+.see-all-link a {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr 1fr 1fr);
+  gap: 16px;
+}
+
+.card {
+  background-color: #181818;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+  transition: background 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card:hover {
+  background-color: #282828;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card-title a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card-subtitle a {
+  color: #b3b3b3;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* <div class="card">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Svagare än jag</b></h4>
+    <p>Ida-Lova</p>
+  </div>
+</div>
+ */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
