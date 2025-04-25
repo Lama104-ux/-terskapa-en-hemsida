@@ -52,7 +52,7 @@ section {
 }
 
 .see-all-link a {
-  color: #121212;
+  color: #b3b3b3;
   font-size: 14px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -63,11 +63,10 @@ section {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(180px, 1fr));
+  grid-template-columns: repeat(6, minmax(136px, 1fr));
   gap: 24px;
   padding-bottom: 0;
   margin-bottom: 24px;
-  align-items: start;
   padding-right: 20px;
 }
 
