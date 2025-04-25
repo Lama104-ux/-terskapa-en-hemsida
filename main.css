@@ -21,10 +21,11 @@ main {
   overflow: hidden;
   box-sizing: border-box;
   margin-bottom: 0;
+
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .section-header {
@@ -63,8 +64,8 @@ section {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(180px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(6, minmax(120px, 1fr));
+  gap: 12px;
   padding-bottom: 0;
   margin-bottom: 24px;
   align-items: start;
@@ -78,7 +79,7 @@ section {
 .card {
   background-color: #121212;
   color: #fff;
-  padding: 16px;
+  padding: 10px;
   border-radius: 8px;
   text-align: left;
   position: relative;
