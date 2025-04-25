@@ -17,10 +17,14 @@ main {
   background-repeat: repeat;
   margin-top: 1px;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   overflow: hidden;
   box-sizing: border-box;
   margin-bottom: 0;
+  margin-right: 15px;
+  margin-left: 426px;
+  max-width: calc(100% - 426px - 15px);
+
 
 }
 
@@ -64,7 +68,7 @@ section {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(120px, 1fr));
+  grid-template-columns: repeat(6, minmax(136px, 1fr));
   gap: 12px;
   padding-bottom: 0;
   margin-bottom: 24px;
