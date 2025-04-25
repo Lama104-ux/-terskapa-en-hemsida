@@ -1,7 +1,16 @@
+main {
+  background-color: #181818;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 8px;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
 .section-container {
   margin-bottom: 40px;
 }
-/* Mellanrum mellan titel och Visa alla */
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -9,22 +18,20 @@
   margin-bottom: 24px;
 }
 
-/* Hur all text visas om inget annat anges*/
+
 .section-body {
   color: white;
   font-weight: 700;
   white-space: nowrap;
 }
 
-/* Styling för Title */
 .section-title h2 a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;   
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* "Visa alla" till höger om titel */
 .see-all-link a {
   color: #b3b3b3;
   font-size: 0.9rem;
@@ -33,8 +40,9 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(180px, 1fr));
   gap: 16px;
+  overflow: hidden;
 }
 
 .card {
@@ -48,21 +56,24 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  overflow: hidden;
 }
 
 .card:hover {
   background-color: #282828;
 }
 
-.card-image img {
+.card-image img,
+.card-round-image img {
   width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 4px;
+  object-fit: cover;
+  display: block;
 }
 
 .card-round-image img {
-  width: 100%;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .card-title a {
@@ -81,28 +92,13 @@
 .card-text {
   color: #b3b3b3;
   font-size: 0.85rem;
-  text-decoration: none;  
+  text-decoration: none;
 }
-
-
-
-
-
-
-/* <div class="card">
-  <img src="img_avatar.png" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>Svagare än jag</b></h4>
-    <p>Ida-Lova</p>
-  </div>
-</div>
- */
 
 a {
   text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline
+  text-decoration: underline;
 }
-
