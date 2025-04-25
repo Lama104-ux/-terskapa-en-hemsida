@@ -2,9 +2,11 @@
     flex-grow: 1;
     background-color: #121212;
     padding: 20px;
-    margin-left: 450px;
+    margin-left: 426px;
     width: calc(100% - 400px);
     box-sizing: border-box;
+    margin-right: 16px;
+    width: calc(100% - 426px - 15px);
 }
 
 .footer-content {
