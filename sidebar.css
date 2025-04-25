@@ -19,7 +19,7 @@ header {
     background-color: #121212;
     width: 410px;
     padding: 20px;
-    height: calc(100vh - 80px);
+    height: 100vh;
     overflow-y: auto;
     position: fixed;
     top: 80px;
