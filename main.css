@@ -1,3 +1,6 @@
+.section-container {
+  margin-bottom: 40px;
+}
 /* Mellanrum mellan titel och Visa alla */
 .section-header {
   display: flex;
@@ -30,7 +33,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(1fr 1fr 1fr 1fr 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 
@@ -56,6 +59,12 @@
   border-radius: 4px;
 }
 
+.card.round.image {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .card-title a {
   color: white;
   font-weight: bold;
@@ -67,6 +76,12 @@
   color: #b3b3b3;
   font-size: 0.85rem;
   text-decoration: none;
+}
+
+.card-text {
+  color: #b3b3b3;
+  font-size: 0.85rem;
+  text-decoration: none;  
 }
 
 
