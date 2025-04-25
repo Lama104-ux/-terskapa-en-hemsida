@@ -1,18 +1,34 @@
 main {
-  background-color: #181818;
+  background-color: #121212;
   background-size: cover;
   background-repeat: repeat;
-  border-radius: 8px;
-  min-height: 100vh;
-  flex-grow: 1;
+  margin-top: 1px;
+  margin-left: 428px;
+  margin-right: 15px;
   padding: 20px;
-  margin-top: 0px;
+  max-width: calc(100% - 420px);
+  min-height: calc(100vh - 80px);
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+section {
+  margin-bottom: 80px;
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 16px;
+  /* Inget extra avstånd ovanför första sektionen */
+  margin-top: 0;
+}
+
+section+section .section-header {
+  margin-top: 32px;
 }
 
 .section-body {
@@ -23,37 +39,49 @@ main {
 
 .section-title h2 a {
   color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
   font-family: Arial, sans-serif;
+  letter-spacing: -0.5px;
 }
 
 .see-all-link a {
-  color: #b3b3b3;
-  font-size: 0.9rem;
-  font-weight: bold;
+  color: #121212;
+  font-size: 14px;
+  font-weight: 600;
   font-family: Arial, sans-serif;
+  text-transform: none;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(180px, 1fr));
-  gap: 8px;
-  overflow: hidden;
+  grid-auto-flow: column(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(139px, 1fr));
+  gap: 24px;
+  padding-bottom: 0;
+  margin-bottom: 100px;
+  align-items: start;
+  padding-right: 20px;
+
+}
+
+.card-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
-  background-color: #181818;
-  color: white;
-  padding: 12px;
+  flex: none;
+  width: 100%;
+  height: 150px;
+  background-color: #121212;
+  color: #fff;
+  padding: 16px;
   border-radius: 8px;
-  text-align: left;
-  position: relative;
-  transition: background 0.3s;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 8px;
-  overflow: hidden;
+  transition: background 0.3s;
 }
 
 .card:hover {
@@ -75,16 +103,21 @@ main {
 
 .card-title a {
   color: white;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 8px;
+  display: block;
   font-family: Arial, sans-serif;
 }
 
 .card-subtitle a {
-  color: #b3b3b3;
-  font-size: 0.85rem;
+  color: #121212;
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
   font-family: Arial, sans-serif;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .card-text {
@@ -100,4 +133,23 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+
+  main {
+    margin: 1px 0 20px 0;
+    padding: 16px;
+    max-width: 100%;
+    border-radius: 0;
+    min-height: auto;
+
+  }
+
+  .card {
+    height: auto;
+
+  }
+
 }
