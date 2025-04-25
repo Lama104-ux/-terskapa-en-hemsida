@@ -4,20 +4,16 @@ main {
   background-repeat: repeat;
   border-radius: 8px;
   min-height: 100vh;
-  padding: 2rem;
-}
-
-.section-container {
-  margin-bottom: 40px;
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 0px;
 }
 
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
 }
-
 
 .section-body {
   color: white;
@@ -27,7 +23,6 @@ main {
 
 .section-title h2 a {
   color: white;
-  text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -41,7 +36,7 @@ main {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(180px, 1fr));
-  gap: 16px;
+  gap: 8px;
   overflow: hidden;
 }
 
@@ -80,7 +75,6 @@ main {
   color: white;
   font-weight: bold;
   font-size: 1rem;
-  margin: 0;
 }
 
 .card-subtitle a {
