@@ -1,7 +1,7 @@
 .main-footer {
-    background-color: black;
+    background-color: #121212;
     padding: 75px 0 30px;
-    margin-left: 400px;
+    margin-left: 428px;
     width: calc(100% - 400px);
     box-sizing: border-box;
 }
