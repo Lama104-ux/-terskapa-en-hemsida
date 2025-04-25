@@ -98,27 +98,144 @@
     margin-bottom: 60px;
 }
 
-/* Responsiv design */
-@media (max-width: 1200px) {
-    .footer-content {
-        justify-content: space-between;
+/* Media queries för mindre skärmar */
+
+/* För större tablets och mindre skärmar (upp till 1200px) */
+@media screen and (max-width: 1200px) {
+    main {
+        margin-left: 426px;
+        max-width: calc(100% - 426px - 15px);
     }
 
-    .footer-section {
-        min-width: 160px;
-        flex: 0 1 auto;
+    .card-grid {
+        grid-template-columns: repeat(4, minmax(120px, 1fr));
+        gap: 10px;
     }
 }
 
-@media (max-width: 768px) {
+/* För mellanstor tablet-vy (upp till 992px) */
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 320px;
+    }
+
+    main {
+        margin-left: 336px;
+        max-width: calc(100% - 336px - 15px);
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(110px, 1fr));
+    }
+
+    .main-footer {
+        margin-left: 336px;
+        width: calc(100% - 336px - 15px);
+    }
+}
+
+/* För tablets (upp till 768px) */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 240px;
+        top: 70px;
+    }
+
+    main {
+        margin-left: 256px;
+        max-width: calc(100% - 256px - 10px);
+        margin-right: 10px;
+        padding: 15px;
+        margin-top: 70px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 8px;
+        padding-right: 10px;
+    }
+
+    .section-title h2 a {
+        font-size: 1.3rem;
+    }
+
+    .main-footer {
+        margin-left: 256px;
+        width: calc(100% - 256px - 10px);
+        padding: 15px;
+    }
+}
+
+/* För mobila enheter i landskapsläge (upp till 576px) */
+@media screen and (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        margin: 70px 0 0 0;
+        border-radius: 0;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 12px;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding-right: 0;
+    }
+
+    .section-title h2 a {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .card-title a {
+        font-size: 14px;
+    }
+
+    .card-subtitle a {
+        font-size: 12px;
+    }
+
     .main-footer {
         margin-left: 0;
         width: 100%;
+        padding: 15px;
+    }
+}
+
+/* För små mobiler (upp till 375px) */
+@media screen and (max-width: 375px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .social-links {
-        width: 100%;
-        justify-content: center;
-        margin-top: 30px;
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .see-all-link {
+        margin-top: 5px;
+    }
+
+    .footer-section {
+        min-width: 100%;
     }
 }
